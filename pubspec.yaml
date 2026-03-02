@@ -1,0 +1,36 @@
+name: mi_primera_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.5.4
+  flutter_ringtone_player: ^4.0.0+4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  # Herramienta para cambiar el icono de la app
+  flutter_launcher_icons: ^0.13.1
+
+# --- CONFIGURACIÓN DE FLUTTER (SOLO UNA VEZ) ---
+flutter:
+  uses-material-design: true
+  
+  # Aquí registramos tu imagen para usarla DENTRO de la app
+  assets:
+    - assets/logo_embid.png
+
+# --- CONFIGURACIÓN DEL ÍCONO DEL CELULAR (LAUNCHER) ---
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/logo_embid.png" 
+  min_sdk_android: 21
